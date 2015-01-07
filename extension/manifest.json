@@ -4,7 +4,7 @@
   "name": "Open Last Download",
   "description": "This extension opens the last available download.",
   "version": "0.1",
-  "permissions": ["downloads", "downloads.open"],
+  "permissions": ["storage","tabs","downloads", "downloads.open"],
   "background": {
     "scripts": ["assets/js/background.js"]
   },
@@ -12,21 +12,30 @@
     "128": "./assets/images/icon.png"
   },
   "commands": {
-    "open-last-downlaod": {
+    "open-last-download": {
       "suggested_key": {
-        "default": "Alt+L"
+        "default": "Alt+X"
       },
       "description": "Open Last Download"
     },
-    "_execute_browser_action": {
+
+    "open-file-explorer": {
       "suggested_key": {
-        "default": "Alt+L"
-      }
+        "default": "Alt+Y"
+      },
+      "description": "Open File Explorer"
     },
-    "_execute_page_action": {
+
+    "show-last-download": {
       "suggested_key": {
-        "default": "Alt+L"
-      }
+        "default": "Alt+C"
+      },
+      "description": "Show Downloaded Files"
     }
+
+
   }
+
 }
+
+
